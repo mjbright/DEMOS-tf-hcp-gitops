@@ -10,7 +10,7 @@ resource "aws_instance" "demo" {
     Name        = "HCP-Demo-Instance"
     Environment = "GitOps"
     ManagedBy   = "Terraform"
-    #Force       = "Force HCP Terraform run at 8am"
+    Force       = "Force HCP Terraform run at 8am"
   }
 }
 
