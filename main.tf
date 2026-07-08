@@ -21,3 +21,9 @@ output "instance_public_ip" {
   description = "The public IP of the EC2 instance"
   value       = aws_instance.demo.public_ip
 }
+  tags = {
+    Name        = "HCP-Demo-Instance"
+    Environment = "GitOps"
+    ManagedBy   = "Terraform"
+    UpdatedBy   = "CLI"    # Add a new tag
+  }
